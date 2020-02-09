@@ -9,11 +9,11 @@ import pandas as pd
 
 def runCNN():
     # LOAD DATA
-    os.listdir('input/Volcanoes_train/')
-    train_images = pd.read_csv('input/Volcanoes_train/train_images.csv', header=None)
-    train_labels = pd.read_csv('input/Volcanoes_train/train_labels.csv')
-    test_images = pd.read_csv('input/Volcanoes_test/test_images.csv', header=None)
-    test_labels = pd.read_csv('input/Volcanoes_test/test_labels.csv')
+    os.listdir('data/Volcanoes_train/')
+    train_images = pd.read_csv('data/Volcanoes_train/train_images.csv', header=None)
+    train_labels = pd.read_csv('data/Volcanoes_train/train_labels.csv')
+    test_images = pd.read_csv('data/Volcanoes_test/test_images.csv', header=None)
+    test_labels = pd.read_csv('data/Volcanoes_test/test_labels.csv')
     train_images.shape, train_labels.shape
 
     # REMOVE FIRST LINE
